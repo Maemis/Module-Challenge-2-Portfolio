@@ -1,0 +1,137 @@
+
+/* DECLARING VARIABLES */
+
+:root {
+    --ff-main: monospace;
+    --fs-title:3em;
+    --fs-body: 1em;
+    --fs-h1: 2.75em;
+    --fs-h2: 2em;
+    --fs-h3: 1.5em;
+    --fw-bold: 900;
+    --fw-med:700;
+    --fw-reg:300;
+
+    --heading-color: rgb(235, 228, 228);
+    --accent-color: rgb(145, 211, 173) ;
+    --main-bg-color: rgba(0, 0, 0, 0.795);
+    --main-bg-lighter: rgba(49, 56, 52, 0.938);
+}
+
+/* GENERAL STYLING */
+
+body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-body);
+    background: var(--main-bg-color);
+    color:var(--heading-color);
+    margin: 0 auto;
+    line-height:1.5;
+    padding: 0em 0em;
+
+}
+
+a {
+
+    text-decoration: none;
+    color:var(--heading-color);
+
+}
+
+section {
+    
+    margin: 1em 1em;
+}
+
+img {
+
+    display:inline;
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    line-height:1;
+    margin: 0;
+}
+
+h1{
+    font-size: var(--fs-h1);
+}
+
+h2{
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+/* GENERAL STYLING DONE */
+
+
+/* HEADER STYLING */
+
+header {
+    text-align: center;
+}
+
+.sub-logo {
+    padding: 2em 0 0.125em 0;
+    background-color: var(--main-bg-color);
+    line-height: 0;
+    flex-wrap:wrap;
+    float:left;
+}
+
+.subnav-logo {
+    width: 90px;
+    margin: 0 auto;
+    
+}
+
+.subnav-p{
+    font-size:18px;
+}
+
+.nav {
+    margin: 0 auto 0;
+    padding: 60px 0;
+    background-color: black;
+}
+
+.nav-list{
+    margin:0;
+    padding:2em 0 0.125em 0;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-items {
+    list-style: none;
+    padding: 1em 1em 0 1em;
+}
+
+.nav-link{
+    font-size: var(--fs-h3);
+    color:var(--heading-color);
+    font-weight:var(--fw-bold);
+}
+
+.button {
+
+    background:var(--main-bg-color);
+    border: var(--accent-color) 4px solid;
+    border-radius: 5em;
+    padding: 0.25em 0.25em;
+    color:var(--heading-color);
+    text-decoration: none;
+    font-size: 3em;
+    font-weight:700;
+    width:max-content;
+}
+
+.button:hover {
+    background:var(--accent-color);
+    color:var(--main-bg-color);
+}
