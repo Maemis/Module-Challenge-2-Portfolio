@@ -280,3 +280,92 @@ header {
 
 /*MEDIA QUERIES START */
 
+@media screen and (min-width:980px){
+    :root {
+        --fs-h1:4rem;
+        --fs-h2: 3.25rem;
+        --fs-h3: 2rem;
+        --fs-title: 4rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+/* Media queries for nav bar STARTS */
+
+@media screen and (min-width:980px) {
+    .sub-logo{
+        padding: 2em 0 0 0;
+        background-color: #020008;
+        line-height:0;
+        width:250px;
+    }
+
+    header{
+        display:flex;
+        align-items: stretch;
+        background-color: #080808;
+        justify-content: flex-start;
+    }
+
+    nav{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        width: 100%;
+    }
+
+    .nav-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+}
+
+ /* Media queries for navbar ENDS */
+
+
+ /* Media queries for about me STARTS */
+
+@media screen and (min-width: 980px) {
+    .about-container {
+      flex-flow: row;
+    }
+  
+    .section-about-image {
+      width: 50%;
+      height: 60%;
+      margin-left:10%
+      
+    }
+  }
+  
+  /* Media queries for about me ENDS */
+
+  /* Media query for my work STARTS */
+
+@media screen and (min-width: 980px) {
+    .section-image-portfolio {
+      width: 27vw;
+    }
+  }
+  
+  /* Media queries for my work ENDS */
+
+  /* Media queries for Contact me STARTS */
+@media screen and (min-width: 980px) {
+    .contact-me {
+      flex-flow: row;
+    }
+  
+    .section-contact-info {
+      margin: 8vw 1em 10vw 1em;
+    }
+  }
+  
+  /* Media queries for Contact me ENDS */
