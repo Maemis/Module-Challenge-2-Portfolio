@@ -3,11 +3,11 @@
 
 :root {
     --ff-main: monospace;
-    --fs-title:3em;
-    --fs-body: 1em;
-    --fs-h1: 2.75em;
-    --fs-h2: 2em;
-    --fs-h3: 1.5em;
+    --fs-title:3rem;
+    --fs-body: 1rem;
+    --fs-h1: 2.75rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
     --fw-bold: 900;
     --fw-med:700;
     --fw-reg:300;
@@ -44,7 +44,6 @@ section {
 }
 
 img {
-
     display:inline;
     max-width: 100%;
 }
@@ -134,4 +133,51 @@ header {
 .button:hover {
     background:var(--accent-color);
     color:var(--main-bg-color);
+}
+
+/* HEADER/NAVBAR STYLING DONE */
+
+
+
+/* ABOUT ME STYLING START */
+
+.about-container {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.section-div-about {
+    margin:0 1em 0 1em;
+    flex:45%;
+}
+
+.section-image{
+    display:flex;
+    flex:55%;
+    justify-content:right;
+    width:20vw;
+    border-radius: 5em;
+    border: var(--accent-color) 4px solid;
+}
+
+.section-title{
+    color:var(--accent-color);
+    font-size: var(--fs-title);
+    margin: 1em 0 0 0;
+}
+
+.section-title span{
+    display:inline-block;
+}
+
+.section-subtitle {
+    background-color: var(--main-bg-lighter);
+    color:var(--heading-color);
+    border-radius:1em;
+    margin: 1em 0;
+    padding: 0.05em 1em;
+    width:fit-content;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-med);
 }
