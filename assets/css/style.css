@@ -142,6 +142,10 @@ header {
 
 /* ABOUT ME STYLING START */
 
+.section-title-about{
+    padding-top: 150px;
+}
+
 .about-container {
     display:flex;
     justify-content: center;
@@ -217,23 +221,7 @@ header {
     opacity: 0.5;
 }
 
-.overlay{
-    position:absolute;
-    top:25%;
-    right:25%;
-    width:6em;
-    height:6em;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    font-size: var(--fs-h3);
-    pointer-events: none;
-    display: none;
-    text-align: center;
-    padding-top: 1.5em;
-    color:var(--main-bg-color);
-}
-
-.portfolio-item:hover .overlay{
+.portfolio-item:hover {
     display:block;
 }
 
@@ -241,3 +229,54 @@ header {
     width:450px;
     height:450px;
 }
+
+/* Portfolio styling ENDS */
+
+/* Contact me styling starts */
+
+.contact-me {
+    margin:6em 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
+
+.section-title-contact{
+    padding-left:250px;
+}
+
+.section-div-contact{
+    margin: 0 1em 0 1em;
+
+}
+
+.section-subtitle-contact{
+    background-color:var(--main-bg-lighter);
+    color:var(--heading-color);
+    font-size: var(--fs-body);
+    padding-left:200px;
+    padding-right:200px;
+}
+
+.section-div-contact a{
+    margin: 0 2em;
+}
+
+.contact-info a{
+    padding: 0 30px 0 30px;
+    justify-content: space-between;
+    border-radius: 5em;
+    
+}
+
+.contact-info a:hover{
+    background:var(--accent-color);
+    color:var(--main-bg-color);
+}
+
+/* CONTACT ME STYLING ENDS */
+
+
+/*MEDIA QUERIES START */
+
